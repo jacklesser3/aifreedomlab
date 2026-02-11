@@ -3,7 +3,6 @@ import BaseLayout from '@layouts/BaseLayout.astro';
 import Button from '@components/ui/Button.astro';
 import BlogCard from '@components/blog/BlogCard.astro';
 import EventCard from '@components/events/EventCard.astro';
-import NewsletterForm from '@components/ui/NewsletterForm';
 import HeroUnlock from '@components/home/HeroUnlock.astro';
 import { getCollection } from 'astro:content';
 import { sortByDate } from '@lib/utils';
@@ -37,7 +36,7 @@ const upcomingEvents = sortByDate(allEvents).slice(0, 3);
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <Button href="/events" variant="primary" size="lg">
-            Join an Experience
+            Attend an Experience
           </Button>
           <Button href="/learn" variant="outline" size="lg" class="!text-white !border-white hover:!bg-white hover:!text-primary-indigo">
             Learn More
@@ -125,15 +124,6 @@ const upcomingEvents = sortByDate(allEvents).slice(0, 3);
       </div>
     </section>
   )}
-
-  <!-- Newsletter CTA -->
-  <section class="py-16 md:py-24">
-    <div class="container mx-auto px-4">
-      <div class="max-w-2xl mx-auto">
-        <NewsletterForm client:load />
-      </div>
-    </div>
-  </section>
 
   <!-- Community CTA -->
   <section class="py-16 md:py-24 bg-gradient-to-br from-primary-indigo to-accent-magenta text-white">
