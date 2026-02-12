@@ -6,14 +6,16 @@ export const NAVIGATION_LINKS = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
   { href: '/events', label: 'Experiences' },
-  { href: '/blog', label: 'Blog' },
-  { href: '/contact', label: 'Contact' },
+  { href: 'https://bitcoinpark.com/email', label: 'OP_Daily' },
 ];
 
 export const SOCIAL_LINKS = {
   twitter: 'https://twitter.com/aifreedomlab_',
-  github: 'https://github.com/aifreedomlab',
-  email: 'alfred@aifreedomlab.org',
+  github: 'https://github.com/jacklesser3/aifreedomlab',
+  linkedin: 'https://www.linkedin.com/company/bitcoinpark/',
+  nostr: 'https://primal.net/park',
+  youtube: 'https://www.youtube.com/@BitcoinPark1',
 };
 
 export const BITCOIN_PARK_URL = 'https://bitcoinpark.com';
+export const OP_DAILY_URL = 'https://bitcoinpark.com/email';

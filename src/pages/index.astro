@@ -23,18 +23,15 @@ const upcomingEvents = sortByDate(allEvents).slice(0, 3);
       <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,_rgba(0,217,255,0.3),transparent_50%)]"></div>
     </div>
 
-    <div class="container mx-auto px-4 py-24 md:py-32 relative z-10">
+    <div class="container mx-auto px-4 py-32 md:py-40 relative z-10">
       <div class="max-w-4xl mx-auto text-center">
-        <!-- Hero Unlock Animation -->
-        <HeroUnlock />
-
-        <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight">
-          Building Intelligence Freedom
+        <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight whitespace-nowrap">
+          Building Intelligent Freedom
         </h1>
         <p class="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto">
-          A movement for self-custodial AI. Own your models, protect your data, preserve your autonomy.
+          Your memory, your brain.
         </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
           <Button href="/events" variant="primary" size="lg">
             Attend an Experience
           </Button>
@@ -42,6 +39,9 @@ const upcomingEvents = sortByDate(allEvents).slice(0, 3);
             Learn More
           </Button>
         </div>
+
+        <!-- Hero Unlock Animation -->
+        <HeroUnlock />
       </div>
     </div>
   </section>
@@ -51,16 +51,13 @@ const upcomingEvents = sortByDate(allEvents).slice(0, 3);
     <div class="container mx-auto px-4">
       <div class="max-w-3xl mx-auto text-center">
         <h2 class="text-3xl md:text-4xl font-bold text-primary-indigo mb-6">
-          Why Intelligence Freedom Matters
+          Why Intelligent Freedom Matters
         </h2>
         <p class="text-lg text-primary-indigo/80 mb-6 leading-relaxed">
-          As AI becomes central to how we think, create, and make decisions, the question of who controls
-          these systems becomes critical. Centralized AI creates new dependencies, vulnerabilities, and
-          power imbalances.
+          AI creates amazing opportunities, vulnerabilities, and potential power imbalances.
         </p>
         <p class="text-lg text-primary-indigo/80 leading-relaxed">
-          We're building a future where individuals and communities can run AI models locally,
-          maintain data sovereignty, and preserve the freedom to think without surveillance or censorship.
+          We're building a future where individuals can think for themselves.
         </p>
       </div>
     </div>
@@ -132,15 +129,11 @@ const upcomingEvents = sortByDate(allEvents).slice(0, 3);
         Join the Movement
       </h2>
       <p class="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
-        Whether you're a developer, researcher, or simply curious about AI sovereignty,
-        there's a place for you in the AI Freedom Lab community.
+        Curious about AI? There's a place for you in the AI Freedom Lab community.
       </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <div class="flex justify-center">
         <Button href="/events" variant="primary" size="lg">
           Attend an Experience
-        </Button>
-        <Button href="/contact" variant="outline" size="lg" class="!text-white !border-white hover:!bg-white hover:!text-primary-indigo">
-          Get in Touch
         </Button>
       </div>
     </div>
