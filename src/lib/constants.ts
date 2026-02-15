@@ -4,7 +4,7 @@ export const SITE_URL = 'https://aifreedomlab.org';
 
 export const NAVIGATION_LINKS = [
   { href: '/', label: 'Home' },
-  { href: '/about', label: 'About' },
+  // { href: '/about', label: 'About' }, // Hidden for Coming Soon
   { href: '/events', label: 'Experiences' },
   { href: 'https://bitcoinpark.com/email', label: 'OP_Daily' },
 ];

@@ -3,7 +3,6 @@ import BaseLayout from '@layouts/BaseLayout.astro';
 import Button from '@components/ui/Button.astro';
 import BlogCard from '@components/blog/BlogCard.astro';
 import EventCard from '@components/events/EventCard.astro';
-import HeroUnlock from '@components/home/HeroUnlock.astro';
 import { getCollection } from 'astro:content';
 import { sortByDate } from '@lib/utils';
 
@@ -26,28 +25,19 @@ const upcomingEvents = sortByDate(allEvents).slice(0, 3);
     <div class="container mx-auto px-4 py-32 md:py-40 relative z-10">
       <div class="max-w-4xl mx-auto text-center">
         <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight whitespace-nowrap">
-          Building Intelligent Freedom
+          Coming Soon
         </h1>
-        <p class="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto">
-          Your memory, your brain.
-        </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
           <Button href="/events" variant="primary" size="lg">
             Attend an Experience
           </Button>
-          <Button href="/learn" variant="outline" size="lg" class="!text-white !border-white hover:!bg-white hover:!text-primary-indigo">
-            Learn More
-          </Button>
         </div>
-
-        <!-- Hero Unlock Animation -->
-        <HeroUnlock />
       </div>
     </div>
   </section>
 
-  <!-- Mission Statement -->
-  <section class="py-16 md:py-24 bg-primary-cream">
+  <!-- Mission Statement - Hidden for Coming Soon -->
+  <!-- <section class="py-16 md:py-24 bg-primary-cream">
     <div class="container mx-auto px-4">
       <div class="max-w-3xl mx-auto text-center">
         <h2 class="text-3xl md:text-4xl font-bold text-primary-indigo mb-6">
@@ -61,7 +51,7 @@ const upcomingEvents = sortByDate(allEvents).slice(0, 3);
         </p>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Upcoming Events -->
   {upcomingEvents.length > 0 && (
@@ -121,6 +111,13 @@ const upcomingEvents = sortByDate(allEvents).slice(0, 3);
       </div>
     </section>
   )}
+
+  <!-- Divider -->
+  <div class="bg-primary-cream py-8">
+    <div class="container mx-auto px-4">
+      <hr class="border-t-2 border-primary-cyan/30 max-w-xs mx-auto" />
+    </div>
+  </div>
 
   <!-- Community CTA -->
   <section class="py-16 md:py-24 bg-gradient-to-br from-primary-indigo to-accent-magenta text-white">
